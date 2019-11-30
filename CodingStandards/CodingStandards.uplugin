@@ -1,0 +1,21 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "CodingStandards",
+	"Description": "Standards documentation for coding in C++ for UE4",
+	"Category": "Other",
+	"CreatedBy": "Splash Damage",
+	"CreatedByURL": "https://www.splashdamage.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"Modules": [
+		{
+			"Name": "CodingStandardsEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
