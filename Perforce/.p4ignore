@@ -1,0 +1,133 @@
+# Perforce has a built-in .p4ignore which ignores things we need for UE4 project development
+!**
+
+# Perforce config (user-specific) files
+/*.p4config
+
+# Re-ignore vs host manifest
+*.vshost.exe.manifest
+
+# UE4 Directories
+FileOpenOrder/
+
+# DDC
+/ue4/Engine/DerivedDataCache/**
+
+# Ignore intermediate folders
+Intermediate/
+obj/
+
+# Ignore any saved local files
+Saved/
+/ue4/Engine/Programs/MemoryProfiler2/**
+/ue4/Engine/Programs/UnrealBuildTool/**
+/ue4/LocalBuilds/
+
+# Ignore VS / VS Code settings directory
+.vs
+.vscode
+
+# Ignore CLion directory
+.idea/
+
+# Ignore Unix backup files
+*~
+
+# Exceptions
+/ue4/*.sln
+/ue4/*.suo
+/ue4/*.xcodeproj
+/ue4/*.code-workspace
+/ue4/*.user
+/ue4/*.vcproj
+/ue4/*.vcxproj
+/ue4/Makefile
+/ue4/CMakeLists.txt
+/ue4/cmake-build-debug
+*.target.xml
+*.dll.config
+*.exe.config
+*.exe.manifest
+*.csproj.References
+/ue4/.kdev4/
+/ue4/UE4CodeCompletionFolders.txt
+/ue4/UE4CodeLitePreProcessor.txt
+/ue4/*.ue4dependencies
+
+# mono files
+*.dll.mdb
+
+# Misc OS files and dirs
+.DS_Store
+Desktop.ini
+desktop.ini
+
+# Git
+/ue4/.git/
+/ue4/*.gitignore
+/ue4/*.tgitconfig
+/ue4/*.gitattributes
+
+# GitDependencies.exe
+!/ue4/Engine/Binaries/DotNET/GitDependencies.exe
+!/ue4/Engine/Binaries/DotNET/GitDependencies.exe.config
+
+# Ignore documentation generated for C# tools
+Engine/Binaries/DotNET/UnrealBuildTool.xml
+Engine/Binaries/DotNET/AutomationScripts/BuildGraph.Automation.xml
+Engine/Source/Programs/AutomationTool/BuildGraph/BuildGraph.Automation.xml
+
+# Ignore Swarm local save files
+Engine/Binaries/DotNET/SwarmAgent.DeveloperOptions.xml
+Engine/Binaries/DotNET/SwarmAgent.Options.xml
+
+# Ignore version files in the Engine/Binaries directory created by UBT
+/ue4/Engine/Binaries/**/*.version
+
+# Ignore exp files in the the Engine/Binaries directory as they aren't C/C++ source files
+/ue4/Engine/Binaries/**/*.exp
+
+# Add exceptions for Mac Mono binaries needed to run GitDependencies.exe.
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/bin/*
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/etc/mono/config
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/etc/mono/4.5/machine.config
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/libMonoPosixHelper.dylib
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/4.5/mscorlib.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/Mono.Posix/4.0.0.0__0738eb9f132ed756/Mono.Posix.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/Mono.Security/4.0.0.0__0738eb9f132ed756/Mono.Security.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/System/4.0.0.0__b77a5c561934e089/System.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/System.Configuration/4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/System.Core/4.0.0.0__b77a5c561934e089/System.Core.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Mac/lib/mono/gac/System.Xml/4.0.0.0__b77a5c561934e089/System.Xml.dll
+
+# Ignore the automatically created mono symlink
+/ue4/Engine/Binaries/ThirdParty/Mono/Mac/bin/mono
+
+# Add exceptions for Linux Mono binaries needed to run GitDependencies.exe.
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/bin/*
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/etc/mono/config
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/etc/mono/4.5/machine.config
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/x86_64-unknown-linux-gnu/bin/mono-boehm
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/x86_64-unknown-linux-gnu/bin/mono-sgen
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/x86_64-unknown-linux-gnu/lib/libMonoPosixHelper.so
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/4.5/mscorlib.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/Mono.Posix/4.0.0.0__0738eb9f132ed756/Mono.Posix.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/Mono.Security/4.0.0.0__0738eb9f132ed756/Mono.Security.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/System/4.0.0.0__b77a5c561934e089/System.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/System.Configuration/4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/System.Core/4.0.0.0__b77a5c561934e089/System.Core.dll
+!/ue4/Engine/Binaries/ThirdParty/Mono/Linux/lib/mono/gac/System.Xml/4.0.0.0__b77a5c561934e089/System.Xml.dll
+
+# Ignore the automatically created mono symlink
+/ue4/Engine/Binaries/ThirdParty/Mono/Linux/bin/mono
+/ue4/Engine/Binaries/ThirdParty/Mono/Linux/bin/mono-boehm
+/ue4/Engine/Binaries/ThirdParty/Mono/Linux/bin/mono-sgen
+
+# Ignore the headers and cpp files in the clang toolchain on Linux
+Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/**
+
+# Log files
+*log.htm
+*.log
+!*.log*.dll
+!*.log*.cs

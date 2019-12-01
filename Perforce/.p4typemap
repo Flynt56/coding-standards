@@ -1,0 +1,110 @@
+# Perforce File Type Mapping Specifications.
+#
+#  TypeMap:	a list of filetype mappings; one per line.
+#		Each line has two elements:
+#
+#  		Filetype: The filetype to use on 'p4 add'.
+#
+#  		Path:     File pattern which will use this filetype.
+#
+# See 'p4 help typemap' for more information.
+
+TypeMap:
+	text //....asp
+	text //....cnf
+	text //....css
+	text //....htm
+	text //....html
+	text //....inc
+	text //....js
+	text+w //....log
+	text+w //....ini
+	text+w //....pdm
+	binary+Fl //....zip
+	binary+Fl //....bz2
+	binary+Fl //....rar
+	binary+Fl //....gz
+	binary+Fl //....avi
+	binary+Fl //....jpg
+	binary+Fl //....jpeg
+	binary+Fl //....mpg
+	binary+Fl //....gif
+	binary+Fl //....tif
+	binary+Fl //....mov
+	binary+Fl //....webm
+	binary+Fl //....jar
+	binary+l //....ico
+	binary+l //....exp
+	binary+l //....btr
+	binary+l //....bmp
+	binary+l //....doc
+	binary+l //....dot
+	binary+l //....xls
+	binary+l //....ppt
+	binary+l //....pdf
+	binary+l //....tar
+	binary+l //....exe
+	binary+l //....dll
+	binary+l //....lib
+	binary+l //....bin
+	binary+l //....class
+	binary+l //....war
+	binary+l //....ear
+	binary+l //....so
+	binary+l //....rpt
+	binary+l //....cfm
+	binary+l //....ma
+	binary+l //....mb
+	binary+l //....pac
+	binary+l //....m4a
+	binary+l //....mp4
+	binary+l //....aac
+	binary+l //....wma
+	binary+l //....docx
+	binary+l //....pptx
+	binary+l //....xlsx
+	binary+l //....png
+	binary+l //....webp
+	binary+l //....raw
+	binary+l //....odt
+	binary+l //....ods
+	binary+l //....odg
+	binary+l //....odp
+	binary+l //....otg
+	binary+l //....ots
+	binary+l //....ott
+	binary+l //....psd
+	binary+l //....sxw
+	binary+Sw //YOUR_DEPOT_NAME/....exe
+	binary+Sw //YOUR_DEPOT_NAME/....dll
+	binary+Sw //YOUR_DEPOT_NAME/....pdb
+	binary+Sw //YOUR_DEPOT_NAME/....lib
+	binary+Sw //YOUR_DEPOT_NAME/....exp
+	binary+Sw //YOUR_DEPOT_NAME/....app
+	binary+Sw //YOUR_DEPOT_NAME/....dylib
+	binary+Sw //YOUR_DEPOT_NAME/....stub
+	binary+Sw //YOUR_DEPOT_NAME/....ipa
+	binary+Sw //YOUR_DEPOT_NAME/....pyc
+	text+Sw //YOUR_DEPOT_NAME/....modules
+	text+Sw //YOUR_DEPOT_NAME/....version
+	text+Sw //YOUR_DEPOT_NAME/....target
+	text //YOUR_DEPOT_NAME/....uproject
+	text //YOUR_DEPOT_NAME/....uplugin
+	text //YOUR_DEPOT_NAME/....ini
+	text //YOUR_DEPOT_NAME/....config
+	text //YOUR_DEPOT_NAME/....cpp
+	text //YOUR_DEPOT_NAME/....cc
+	text //YOUR_DEPOT_NAME/....h
+	text //YOUR_DEPOT_NAME/....hh
+	text //YOUR_DEPOT_NAME/....hpp
+	text //YOUR_DEPOT_NAME/....c
+	text //YOUR_DEPOT_NAME/....cs
+	text //YOUR_DEPOT_NAME/....m
+	text //YOUR_DEPOT_NAME/....mm
+	text //YOUR_DEPOT_NAME/....py
+	binary+l //YOUR_DEPOT_NAME/....uasset
+	binary+l //YOUR_DEPOT_NAME/....umap
+	binary+l //YOUR_DEPOT_NAME/....upk
+	binary+l //YOUR_DEPOT_NAME/....udk
+	binary+Sl //YOUR_DEPOT_NAME/..._BuiltData.uasset
+
