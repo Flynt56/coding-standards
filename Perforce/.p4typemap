@@ -107,4 +107,3 @@ TypeMap:
 	binary+l //YOUR_DEPOT_NAME/....upk
 	binary+l //YOUR_DEPOT_NAME/....udk
 	binary+Sl //YOUR_DEPOT_NAME/..._BuiltData.uasset
-
