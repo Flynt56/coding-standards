@@ -1,0 +1,32 @@
+---
+# Basic
+Language:                                       Cpp
+BasedOnStyle:                                   LLVM
+IndentWidth:                                    4
+TabWidth:                                       4
+UseTab:                                         Never
+AccessModifierOffset:                           -4
+AlignConsecutiveAssignments:                    true
+AlignConsecutiveDeclarations:                   true
+BreakBeforeBraces:                              Allman
+AllowShortFunctionsOnASingleLine:               Inline
+BreakConstructorInitializersBeforeComma:        true
+PointerAlignment:                               Left
+DerivePointerAlignment:                         true
+KeepEmptyLinesAtTheStartOfBlocks:               false
+ForEachMacros:
+  - for
+IncludeBlocks:                                  Regroup
+IncludeCategories: 
+  - Regex:                                      '.*\.generated\.h'
+    Priority:                                   100
+  - Regex:                                      '.*(PCH).*'
+    Priority:                                   -1
+  - Regex:                                      '".*"'
+    Priority:                                   1
+  - Regex:                                      '^<.*\.(h)>'
+    Priority:                                   3
+  - Regex:                                      '^<.*>'
+    Priority:                                   4
+IncludeIsMainRegex:                             '([-_](test|unittest))?$'
+---
