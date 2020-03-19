@@ -6,14 +6,20 @@ IndentWidth:                                    4
 TabWidth:                                       4
 UseTab:                                         Never
 AccessModifierOffset:                           -4
+ColumnLimit:                                    120
+AlignEscapedNewlines:                           Right
 AlignConsecutiveAssignments:                    true
 AlignConsecutiveDeclarations:                   true
+AlignAfterOpenBracket:                          DontAlign
+AlignTrailingComments:                          true
 BreakBeforeBraces:                              Allman
-AllowShortFunctionsOnASingleLine:               Inline
+AllowShortCaseLabelsOnASingleLine:              true
+AllowShortFunctionsOnASingleLine:               InlineOnly
 BreakConstructorInitializersBeforeComma:        true
 PointerAlignment:                               Left
 DerivePointerAlignment:                         true
 KeepEmptyLinesAtTheStartOfBlocks:               false
+SpacesInAngles:                                 false
 ForEachMacros:
   - for
 IncludeBlocks:                                  Regroup
@@ -30,3 +36,4 @@ IncludeCategories:
     Priority:                                   4
 IncludeIsMainRegex:                             '([-_](test|unittest))?$'
 ---
+
